@@ -63,6 +63,10 @@ $posini= strpos($d1,$p,0);
 $posfin= strpos($d1,",",$posini);
 $directorio=utf8_encode (substr($d1,$posini,$posfin-$posini));
 
+echo "<br>"."scandir home  ".$d;
+echo "<br>"."directorio  ".$directorio;
+
+
 
 $p="Pre_";
 $d=scandir($home."\\".$directorio);
