@@ -73,7 +73,9 @@ $pre=utf8_encode ($directorio2);
 
 $pdf="http://mozilla.github.io/pdf.js/web/viewer.html?file=//".$pru."/".$directorio."/"."$pre"."/Pregunta".$unidad.".".$pregunta.".pdf";
 $file=$home."\\".$directorio."\\"."$pre"."\\Pregunta".$unidad.".".$pregunta.".pdf";
-
+      
+echo $pdf ;     
+echo $file;
 
 // mostrando el pdf
 if ((file_exists($file)))
