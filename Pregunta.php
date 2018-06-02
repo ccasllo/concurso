@@ -76,7 +76,7 @@ $pre=utf8_encode ($directorio2);
 
 $file="Prueba1/U_1_Numero_y_algebra/Pre_Numero_y_algebra/Pregunta1.".$pregunta.".pdf";      
 echo $file;
-$pdf='http://mozilla.github.io/pdf.js/web/viewer.html?file="https://concursomatematicasib.herokuapp.com/"'.$file;
+$pdf='http://mozilla.github.io/pdf.js/web/viewer.html?file=https://concursomatematicasib.herokuapp.com/'.$file;
 
       
 // Prueba1\U_1_Numero_y_algebra\Pre_Numero_y_algebra
