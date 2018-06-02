@@ -46,7 +46,7 @@ Ingrese el numero de la pregunta:
 $pru=$_REQUEST['PRUEBA'];
 $home=getcwd()."\\".$pru;
 
-$home=str_replace("/","\",$home);
+//$home=str_replace("/","\",$home);
       
 echo "<br>"."este es el home  ".$home;      
       
