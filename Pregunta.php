@@ -74,12 +74,16 @@ $directorio2=utf8_encode (substr($d1,$posini,$posfin-$posini));
 
 $pre=utf8_encode ($directorio2);
 
+$file="Prueba1/U_1_Numero_y_algebra/Pre_Numero_y_algebra/".".$pregunta.".pdf";      
+echo $file;
+$pdf="http://mozilla.github.io/pdf.js/web/viewer.html?file=//$file;
 
-$pdf="http://mozilla.github.io/pdf.js/web/viewer.html?file=//".$pru."/".$directorio."/"."$pre"."/Pregunta".$unidad.".".$pregunta.".pdf";
-$pdf=str_replace("///","/",$pdf);      
-$file=$home."\\".$directorio."\\"."$pre"."\\Pregunta".$unidad.".".$pregunta.".pdf";
+//$file=$home."\\".$directorio."\\"."$pre"."\\Pregunta".$unidad.".".$pregunta.".pdf";
       
-
+      
+Prueba1\U_1_Numero_y_algebra\Pre_Numero_y_algebra
+      
+      
 // mostrando el pdf
 if ((file_exists($file)))
 {
