@@ -45,10 +45,7 @@ Ingrese el numero de la pregunta:
 //Capturamos el directorio de la Prueba
 $pru=$_REQUEST['PRUEBA'];
 $home=getcwd()."\\".$pru;
-
-$home=str_replace("/","\",$home);
-      
-echo "<br>"."este es el home  ".$home;      
+  
       
 //Capturamos la unidad
 $unidad=$_REQUEST['unidad'];
@@ -63,8 +60,7 @@ $posini= strpos($d1,$p,0);
 $posfin= strpos($d1,",",$posini);
 $directorio=utf8_encode (substr($d1,$posini,$posfin-$posini));
 
-echo "<br>"."scandir home  ".$d;
-echo "<br>"."directorio  ".$directorio;
+
 
 
 
