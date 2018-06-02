@@ -85,6 +85,9 @@ $pdf='http://mozilla.github.io/pdf.js/web/viewer.html?file="https://concursomate
 // mostrando el pdf
 if ((file_exists($file)))
 {
+echo "<br>";
+echo $pdf;
+echo "<br>";
 echo "Unidad :".$unidad." Pregunta :".$pregunta;
 echo "<br>";
   
