@@ -87,7 +87,8 @@ else {
  // echo "La unidad ó la pregunta ingresada no Existen"."<br>Unidad :".$unidad." Pregunta :".$pregunta;
 
 echo "<br>"."este es el  pdf ";      
-echo str_replace("///","/",$pdf) ; 
+echo str_replace("///","/",$pdf) ;
+echo str_replace("/","///",$pdf) ;  
 echo "<br>"."este el el file";
 echo $file;
      
