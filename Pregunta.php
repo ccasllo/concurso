@@ -46,6 +46,8 @@ Ingrese el numero de la pregunta:
 $pru=$_REQUEST['PRUEBA'];
 $home=getcwd()."\\".$pru;
 
+echo "<br>"."este es el home  ".$home;      
+      
 //Capturamos la unidad
 $unidad=$_REQUEST['unidad'];
 //capturamos la pregunta
@@ -72,6 +74,7 @@ $pre=utf8_encode ($directorio2);
 
 
 $pdf="http://mozilla.github.io/pdf.js/web/viewer.html?file=//".$pru."/".$directorio."/"."$pre"."/Pregunta".$unidad.".".$pregunta.".pdf";
+$pdf=str_replace("///","/",$pdf);      
 $file=$home."\\".$directorio."\\"."$pre"."\\Pregunta".$unidad.".".$pregunta.".pdf";
       
 
@@ -82,16 +85,7 @@ echo "Unidad :".$unidad." Pregunta :".$pregunta;
 echo "<br>";
 echo '<iframe src="'.$pdf.'" width="100%" height="100%" />' ;
 }
-else {
-  
- // echo "La unidad ó la pregunta ingresada no Existen"."<br>Unidad :".$unidad." Pregunta :".$pregunta;
-
-echo "<br>"."este es el  pdf ";      
-echo str_replace("///","/",$pdf) ;
-echo "<br>"."este el el file";
-echo $file;
-     
-     
+else { echo "La unidad ó la pregunta ingresada no Existen"."<br>Unidad :".$unidad." Pregunta :".$pregunta;  
      }
 
 
