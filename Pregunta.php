@@ -81,7 +81,7 @@ $pdf="http://mozilla.github.io/pdf.js/web/viewer.html?file=//$file;
 //$file=$home."\\".$directorio."\\"."$pre"."\\Pregunta".$unidad.".".$pregunta.".pdf";
       
       
-Prueba1\U_1_Numero_y_algebra\Pre_Numero_y_algebra
+// Prueba1\U_1_Numero_y_algebra\Pre_Numero_y_algebra
       
       
 // mostrando el pdf
