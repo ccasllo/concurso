@@ -6,7 +6,7 @@ session_start();
 	$username=$_POST['mail'];
 	$pass=$_POST['pass'];
 
-$sql="SELECT*FROM concurso.usuarios_qm WHERE (correo='$username' or usuario='$username') and (codigo='$pass' or documento='$pass')";
+$sql="SELECT*FROM usuarios_qm WHERE (correo='$username' or usuario='$username') and (codigo='$pass' or documento='$pass')";
 $result = mysqli_query($mysqli,$sql); 
 
 if(mysqli_num_rows($result)>0){
