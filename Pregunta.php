@@ -74,8 +74,6 @@ $pre=utf8_encode ($directorio2);
 $pdf="http://mozilla.github.io/pdf.js/web/viewer.html?file=//".$pru."/".$directorio."/"."$pre"."/Pregunta".$unidad.".".$pregunta.".pdf";
 $file=$home."\\".$directorio."\\"."$pre"."\\Pregunta".$unidad.".".$pregunta.".pdf";
       
-echo $pdf ;     
-echo $file;
 
 // mostrando el pdf
 if ((file_exists($file)))
@@ -84,7 +82,15 @@ echo "Unidad :".$unidad." Pregunta :".$pregunta;
 echo "<br>";
 echo '<iframe src="'.$pdf.'" width="100%" height="100%" />' ;
 }
-else {echo "La unidad ó la pregunta ingresada no Existen"."<br>Unidad :".$unidad." Pregunta :".$pregunta;}
+else {echo "La unidad ó la pregunta ingresada no Existen"."<br>Unidad :".$unidad." Pregunta :".$pregunta;
+
+echo "<br>";      
+echo $pdf ; 
+echo "<br>";
+echo $file;
+     
+     
+     }
 
 
 ?>
