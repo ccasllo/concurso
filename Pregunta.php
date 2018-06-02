@@ -89,7 +89,8 @@ if ((file_exists($file)))
 {
 echo "Unidad :".$unidad." Pregunta :".$pregunta;
 echo "<br>";
-echo '<iframe src="'.$pdf.'" width="100%" height="100%" />' ;
+echo $pdf;   
+//echo '<iframe src="'.$pdf.'" width="100%" height="100%" />' ;
 }
 else { echo "La unidad ó la pregunta ingresada no Existen"."<br>Unidad :".$unidad." Pregunta :".$pregunta;  
      }
