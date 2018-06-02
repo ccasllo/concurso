@@ -71,7 +71,7 @@ $directorio2=utf8_encode (substr($d1,$posini,$posfin-$posini));
 $pre=utf8_encode ($directorio2);
 
 
-$pdf="/Lector_Pdf/web/viewer.html?file=/Concurso/".$pru."/".$directorio."/"."$pre"."/Pregunta".$unidad.".".$pregunta.".pdf";
+$pdf="http://mozilla.github.io/pdf.js/web/viewer.html?file=/Concurso/".$pru."/".$directorio."/"."$pre"."/Pregunta".$unidad.".".$pregunta.".pdf";
 $file=$home."\\".$directorio."\\"."$pre"."\\Pregunta".$unidad.".".$pregunta.".pdf";
 
 
